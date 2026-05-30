@@ -16,8 +16,10 @@ App.jsx >> Komponen utama untuk menggabungkan navbar, card, footer, fitur lain
 App.css >> Styling 
 
 main.jsx >> Entry point 
+
 context/ 
   > AppContext.jsx = menyimpan global state (useContext, useEffect, useState) yang dalam projek ini adalah daftar following & theme
+
 components/
   > Navbar.jsx = Sebagai navigasi + pencarian
   > UserCard.jsx = Menampilkan profil user

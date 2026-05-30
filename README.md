@@ -15,15 +15,16 @@ App.jsx >> Komponen utama untuk menggabungkan navbar, card, footer, fitur lain
 App.css >> Styling 
 main.jsx >> Entry point 
 context/ 
-  >> AppContext.jsx = menyimpan global state (useContext, useEffect, useState) yang dalam projek ini adalah daftar following & theme
+  > AppContext.jsx = menyimpan global state (useContext, useEffect, useState) yang dalam projek ini adalah daftar following & theme
 components/
-  >> Navbar.jsx = Sebagai navigasi + pencarian
-  >> UserCard.jsx = Menampilkan profil user
->> Footer.jsx = Menampilkan info aplikasi & statistik jumlah user & following
+  > Navbar.jsx = Sebagai navigasi + pencarian
+  > UserCard.jsx = Menampilkan profil user
+  > Footer.jsx = Menampilkan info aplikasi & statistik jumlah user & following
 
 ## Implementasi React Hook 
 ### 1. useState
 Menyimpan data yang bisa berubah 
+
 <img width="682" height="147" alt="image" src="https://github.com/user-attachments/assets/f79756a3-76d8-4441-8b53-7380a38cd438" />
 
 note : menyimpan data user, merender/rerender theme 

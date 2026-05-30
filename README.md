@@ -10,6 +10,7 @@ Data user diambil dari `https://jsonplaceholder.typicode.com/users` menggunakan 
 
 ## Komponen
 <img width="749" height="363" alt="image" src="https://github.com/user-attachments/assets/797f9ecf-13b2-4806-b2b4-fc9414da7cdb" />
+
 App.jsx >> Komponen utama untuk menggabungkan navbar, card, footer, fitur lain 
 App.css >> Styling 
 main.jsx >> Entry point 
@@ -24,11 +25,13 @@ components/
 ### 1. useState
 Menyimpan data yang bisa berubah 
 <img width="682" height="147" alt="image" src="https://github.com/user-attachments/assets/f79756a3-76d8-4441-8b53-7380a38cd438" />
+
 note : menyimpan data user, merender/rerender theme 
 
 ### 2. useEffect
 Menjalankan efek samping seperti fetch data 
 <img width="1288" height="452" alt="image" src="https://github.com/user-attachments/assets/527f6ade-5335-4088-ae62-960678f95018" />
+
 note : fetch API saat komponen pertama kali dimount
 
 ### 3. useContext 

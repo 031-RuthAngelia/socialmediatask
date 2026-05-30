@@ -1,20 +1,42 @@
-# React + Vite
+# Socialala 
+Aplikasi sosial media menggunakan React JS yang menampilkan data user dari JSONPlaceholder API. Fitur terbaik seperti Like, Follow, Search, dan Dark/Light Mode.
+<img width="1913" height="873" alt="image" src="https://github.com/user-attachments/assets/0103b99f-e9d2-4e1e-9b96-88d7906dfafd" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
+## Teknis Website
+---
+## Fetch API >>  membuat permintaan dan "mengambil" data dari server seperti file/gambar
+Data user diambil dari `https://jsonplaceholder.typicode.com/users` menggunakan `fetch()` di dalam `useEffect`.
 
-Currently, two official plugins are available:
+## Komponen
+<img width="749" height="363" alt="image" src="https://github.com/user-attachments/assets/797f9ecf-13b2-4806-b2b4-fc9414da7cdb" />
+App.jsx >> Komponen utama untuk menggabungkan navbar, card, footer, fitur lain 
+App.css >> Styling 
+main.jsx >> Entry point 
+context/ 
+  >> AppContext.jsx = menyimpan global state (useContext, useEffect, useState) yang dalam projek ini adalah daftar following & theme
+components/
+>  > Navbar.jsx = Sebagai navigasi + pencarian
+>  > UserCard.jsx = Menampilkan profil user
+>  > Footer.jsx = Menampilkan info aplikasi & statistik jumlah user & following
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Implementasi React Hook 
+### 1. useState
+Menyimpan data yang bisa berubah 
+<img width="682" height="147" alt="image" src="https://github.com/user-attachments/assets/f79756a3-76d8-4441-8b53-7380a38cd438" />
+note : menyimpan data user, merender/rerender theme 
 
-## React Compiler
+### 2. useEffect
+Menjalankan efek samping seperti fetch data 
+<img width="1288" height="452" alt="image" src="https://github.com/user-attachments/assets/527f6ade-5335-4088-ae62-960678f95018" />
+note : fetch API saat komponen pertama kali dimount
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### 3. useContext 
+Berbagi state global antar component
+<img width="1067" height="242" alt="image" src="https://github.com/user-attachments/assets/c1f27b92-ebd9-4db2-beef-532169e9b931" />
 
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 4. useRef
+Mengakses elemen DOM secara langsung tanpa memicu re-render
+<img width="863" height="91" alt="image" src="https://github.com/user-attachments/assets/89a5cb83-cc49-4dd8-bb94-265b2e285f7a" />
 
 # socialmediatask

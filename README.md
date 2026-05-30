@@ -17,9 +17,9 @@ main.jsx >> Entry point
 context/ 
   >> AppContext.jsx = menyimpan global state (useContext, useEffect, useState) yang dalam projek ini adalah daftar following & theme
 components/
->  > Navbar.jsx = Sebagai navigasi + pencarian
->  > UserCard.jsx = Menampilkan profil user
->  > Footer.jsx = Menampilkan info aplikasi & statistik jumlah user & following
+  >> Navbar.jsx = Sebagai navigasi + pencarian
+  >> UserCard.jsx = Menampilkan profil user
+>> Footer.jsx = Menampilkan info aplikasi & statistik jumlah user & following
 
 ## Implementasi React Hook 
 ### 1. useState

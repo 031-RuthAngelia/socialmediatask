@@ -12,7 +12,9 @@ Data user diambil dari `https://jsonplaceholder.typicode.com/users` menggunakan 
 <img width="749" height="363" alt="image" src="https://github.com/user-attachments/assets/797f9ecf-13b2-4806-b2b4-fc9414da7cdb" />
 
 App.jsx >> Komponen utama untuk menggabungkan navbar, card, footer, fitur lain 
+
 App.css >> Styling 
+
 main.jsx >> Entry point 
 context/ 
   > AppContext.jsx = menyimpan global state (useContext, useEffect, useState) yang dalam projek ini adalah daftar following & theme
